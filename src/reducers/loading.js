@@ -1,6 +1,6 @@
 import {RECIEVE_DATA} from '../actions/shared'
 
-export default const loading = (state = true, action) => {
+const loading = (state = true, action) => {
   switch (action.type) {
     case RECIEVE_DATA:
       return false
@@ -8,3 +8,5 @@ export default const loading = (state = true, action) => {
       return state
   }
 }
+
+export default loading
